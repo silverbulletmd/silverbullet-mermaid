@@ -1,0 +1,7 @@
+{
+  "importMap": "import_map.json",
+  "tasks": {
+    "build": "silverbullet plug:compile --importmap import_map.json hello.plug.yaml",
+    "watch": "silverbullet plug:compile -w --importmap import_map.json hello.plug.yaml"
+  }
+}
