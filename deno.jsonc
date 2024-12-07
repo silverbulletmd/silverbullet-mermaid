@@ -1,7 +1,8 @@
 {
   "importMap": "import_map.json",
   "tasks": {
-    "build": "silverbullet plug:compile --importmap import_map.json mermaid.plug.yaml",
-    "watch": "silverbullet plug:compile -w --importmap import_map.json mermaid.plug.yaml"
+    "build": "silverbullet plug:compile --importmap import_map.json diagrams.plug.yaml",
+    "debug": "silverbullet plug:compile --debug --importmap import_map.json diagrams.plug.yaml && cp diagrams.plug.js* ./space/_plug/",
+    "watch": "silverbullet plug:compile -w --importmap import_map.json diagrams.plug.yaml"
   }
 }

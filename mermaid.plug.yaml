@@ -1,8 +1,0 @@
-name: mermaid
-version: 0.1
-imports:
-  - https://get.silverbullet.md/global.plug.json
-functions:
-  mermaidWidget:
-    path: ./mermaid.ts:widget
-    codeWidget: mermaid
