@@ -14,7 +14,10 @@ That's all!
 
 Put a mermaid block in your markdown:
 
-    ``diagrams     flowchart TD         Start --> Stop     ``
+    ```diagrams     
+        flowchart TD         
+        Start --> Stop     
+    ```
 
 Put a plantuml block in your markdown:
 
