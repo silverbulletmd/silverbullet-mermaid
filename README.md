@@ -19,3 +19,15 @@ Put a mermaid block in your markdown:
     ```
 
 And move your cursor outside of the block to live preview it!
+
+## Configuration 
+
+You can use a `space-config` block to customize this plug. 
+
+
+   ```space-config
+   mermaid:
+     version: "11.4.0"
+     integrity: "SRI Hash"
+   ```
+
