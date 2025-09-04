@@ -1,11 +1,12 @@
 import { system } from "@silverbulletmd/silverbullet/syscalls";
+import { CodeWidgetContent } from "@silverbulletmd/silverbullet/type/client";
 
 export async function widget(
-  bodyText: string,
+    bodyText: string,
 ): Promise<CodeWidgetContent> {
-  const config = await system.getSpaceConfig("mermaid")
-  const mermaidVersion = config?.version || "11.4.1"
-  let mermaidHash : string | undefined = config?.integrity ? `"${config.integrity}"` : `"sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54="`
+  const config = await system.getConfig("mermaid", {version: "11.10.1"})
+  const mermaidVersion = config?.version;
+  let mermaidHash : string | undefined = config?.integrity ? `"${config.integrity}"` : `"sha256-BmQmdWDS8X2OTbrwELWK366LV6escyWhHHe0XCTU/Hk="`
   if (config?.integrity_disabled) {
     mermaidHash = undefined;
   }

@@ -1,11 +1,8 @@
 {
   "tasks": {
-    "build": "silverbullet plug:compile -c deno.jsonc mermaid.plug.yaml",
-    "watch": "silverbullet plug:compile -w -c deno.jsonc mermaid.plug.yaml"
+    "build": "deno run -A https://github.com/silverbulletmd/silverbullet/releases/download/edge/plug-compile.js -c deno.jsonc mermaid.plug.yaml"
   },
   "imports": {
-    "$sb/": "https://deno.land/x/silverbullet@0.10.1/plug-api/",
-    "handlebars": "https://esm.sh/handlebars",
-    "@silverbulletmd/silverbullet": "jsr:@silverbulletmd/silverbullet@^0.10.1"
+    "@silverbulletmd/silverbullet": "jsr:@silverbulletmd/silverbullet@2.0.0"
   }
 }
