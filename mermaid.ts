@@ -11,11 +11,22 @@ export async function widget(
     mermaidHash = undefined;
   }
 
+  let packs: string = "";
+  if (config?.icon_packs) {
+    for (const pack of config?.icon_packs) {
+      packs += `{
+        name: "${pack.name}",
+        loader: () => fetch("${pack.url}").then(r => r.json()),
+      },`;
+    }
+  }
+
   return {
     html: `<pre class="mermaid">${bodyText.replaceAll("<", "&lt;")}</pre>`,
     script: `
     loadJsByUrl("https://cdn.jsdelivr.net/npm/mermaid@${mermaidVersion}/dist/mermaid.min.js", ${mermaidHash}).then(() => {
       mermaid.init().then(updateHeight);
+      mermaid.registerIconPacks([${packs}]);
     });
     document.addEventListener("click", () => {
       api({type: "blur"});
