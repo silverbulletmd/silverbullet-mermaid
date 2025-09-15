@@ -51,6 +51,13 @@ You can use the `mermaid` config to tweak a few things:
       integrity = "new integrity hash",
       -- or disable integrity checking
       integrity_disabled = true
+      -- optional: register icon packs 
+      icon_packs = {
+        {
+          name = "logos",
+          url = "https://unpkg.com/@iconify-json/logos@1/icons.json",
+        },
+      },
     })
     ```
 
