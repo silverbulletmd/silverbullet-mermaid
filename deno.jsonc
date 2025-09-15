@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "build": "deno run -A https://github.com/silverbulletmd/silverbullet/releases/download/2.0.0/plug-compile.js -c deno.jsonc mermaid.plug.yaml"
+    "build": "deno run -A https://github.com/silverbulletmd/silverbullet/releases/download/edge/plug-compile.js -c deno.jsonc mermaid.plug.yaml"
   },
   "imports": {
     "@silverbulletmd/silverbullet": "jsr:@silverbulletmd/silverbullet@2.0.0"
