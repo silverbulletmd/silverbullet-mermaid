@@ -1,8 +1,8 @@
 ---
 description: "Mermaid support for SilverBullet"
-assets:
-- file: "mermaid.plug.js"
-  target: "/_plug/mermaid.plug.js"
+tags: meta/library
+files:
+- mermaid.plug.js
 ---
 # Silver Bullet plug for Mermaid diagrams
 This plug adds basic [Mermaid](https://mermaid.js.org/) support to Silver Bullet.
