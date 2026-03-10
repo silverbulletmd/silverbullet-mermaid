@@ -1,0 +1,11 @@
+{
+  "name": "silverbullet-mermaid",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npx plug-compile mermaid.plug.yaml"
+  },
+  "dependencies": {
+    "@silverbulletmd/silverbullet": "^2.5.3"
+  }
+}
